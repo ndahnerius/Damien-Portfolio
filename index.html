@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Damien </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"> <span class="logo_D">D</span>AMIEN </div>
+                <ul>
+                    <li><a href=""> Home </a></li>
+                    <li><a href=""> About </a></li>
+                    <li><a href=""> Services </a></li>
+                    <li><a href=""> Portfolio </a></li>
+                    <li><a href=""> Testimonial </a></li>
+                    <li><a href=""> Contact </a></li> 
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p> Civil Engineer </p>
+                <h1> Hi i'm <span class="logo_D"> Ndah Damien </span></h1>
+                <div class="button">
+                    <a href="#portfolio" class="hero-btn"> Portfolio </a>
+                    <a href="#portfolio" class="hero-btn hero-btn2"> About Me </a>
+                </div>
+                
+            </div>
+        </div>
+   </div>
+
+
+   <!-- ====== About ==== -->
+   <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-tit">About Me</h1>                   
+                     <p class="about-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, fugiat! Debitis, blanditiis! Accusantium dolorum modi dolores sequi harum magnam quis reiciendis labore! Assumenda voluptate ea perspiciatis laborum earum quas possimus. </p>
+
+                    <div class="tap-titles">
+                        <p class="tap-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tap-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tap-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tap-contents active-tap" id="skills">
+                        <ul>
+                            <li><span>Lorem ipsum.</span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fuga.</li>
+                            <li><span>Lorem ipsum.</span> <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, dolorum?</li>
+                            <li><span>Lorem ipsum.</span> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, eveniet.</li>
+                        </ul>
+                    </div>
+                    <div class="tap-contents" id="experience">
+                        <ul>
+                            <li><span>2026.</span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fuga.</li>
+                            <li><span>2055.</span> <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, dolorum?</li>
+                            <li><span>2016.</span> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, eveniet.</li>
+                        </ul>
+                    </div>
+                    <div class="tap-contents" id="education">
+                        <ul>
+                            <li><span>2026</span> <br> High school </li>
+                            <li><span>2055</span> <br> univesity of japan </li>
+                            <li><span>2016</span> <br> Polytechnic </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-col-1"></div>
+                <div class="about-col-1"></div>
+            </div>
+        </div>
+   </section>   
+
+<script src="script.js">
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tap");
+        }
+    }
+</script>    
+</body>
+</html>
