@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Damien </title>
+    <title> DamienNgum </title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    
 </head>
 <body>
 
    <div id="header">
         <div class="container">
             <nav>
-                <div class="logo"> <span class="logo_D">D</span>AMIEN </div>
-                <ul>
-                    <li><a href=""> Home </a></li>
-                    <li><a href=""> About </a></li>
-                    <li><a href=""> Services </a></li>
-                    <li><a href=""> Portfolio </a></li>
-                    <li><a href=""> Testimonial </a></li>
-                    <li><a href=""> Contact </a></li> 
+                <div class="logo"> <a href=""><span class="logo_D">D</span>AMIEN</a> </div>
+                <ul id="sidemenu">
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="about.html"> About Me</a></li>
+                    <li><a href="services.html"> Services </a></li>
+                    <li><a href="work.html"> Portfolio </a></li>
+                    <li><a href="testimonial.html">Testimonial</a></li>
+                    <li><a href="contact.html">Contact</a></li> 
+                    <i class="fas fa-close" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
                 <p> Civil Engineer </p>
-                <h1> Hi i'm <span class="logo_D"> Ndah Damien </span></h1>
+                <h1> Hi i'm <span class="logo_D">Ndah Damien</span></h1>
                 <p class="header-caption"> This is my personal porfolio to show all my work and experience as a Civil Engineer</p>
                 <div class="button">
-                    <a href="#portfolio" class="hero-btn"> Portfolio </a>
-                    <a href="#portfolio" class="hero-btn hero-btn2"> About Me </a>
+                    <a href="work.html" class="hero-btn"> Portfolio </a>
+                    <a href="about.html" class="hero-btn hero-btn2"> About Me </a>
                 </div>
-                
             </div>
         </div>
    </div>
@@ -45,7 +48,7 @@
                     <img src="images/about.jpeg" alt="">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="about-tit">About Me</h1>                   
+                    <h1 class="sub-tit">About Me</h1>                   
                      <p class="about-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, fugiat! Debitis, blanditiis! Accusantium dolorum modi dolores sequi harum magnam quis reiciendis labore! Assumenda voluptate ea perspiciatis laborum earum quas possimus. </p>
 
                     <div class="tap-titles">
@@ -75,24 +78,194 @@
                         </ul>
                     </div>
                 </div>
-                <div class="about-col-1"></div>
-                <div class="about-col-1"></div>
             </div>
         </div>
    </section>   
+   <!-- -------End about------- -->
 
-<script src="script.js">
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tap");
-        }
-    }
-</script>    
+
+   <!-- ------Services--------- -->
+   <section class="" id="services">
+    <div class="container">
+        <h1 class="sub-tit services-tit">My Services</h1>  
+        <div class="services-list">
+            <div>
+                <i class="fas fa-pen-ruler"></i>
+                <h2> Plan Drawing </h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ratione a, tenetur odit corporis sequi repudiandae nulla eum libero cupiditate?</p>
+                <a href="">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-calculator"></i>
+                <h2> Estimate</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ratione a, tenetur odit corporis sequi repudiandae nulla eum libero cupiditate?</p>
+                <a href="">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-group-arrows-rotate"></i>
+                <h2> Soil Testing </h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ratione a, tenetur odit corporis sequi repudiandae nulla eum libero cupiditate?</p>
+                <a href="">learn more</a>
+            </div>
+        </div>
+    </div>
+   </section>
+   <!-- -------- End Services -------- -->
+
+
+   <!-- ------------Portfolio----------- -->
+   <section id="Portfolio">
+        <div class="container">
+            <div class="sub-tit work-tit">My Portfolio</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/portfolio1.jpeg">
+                    <div class="layer">
+                        <h3>Tittle</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, blanditiis.</p>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfolio2.jpeg">
+                    <div class="layer">
+                        <h3>Tittle</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, blanditiis.</p>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfolio3.jpeg">
+                    <div class="layer">
+                        <h3>Tittle</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, blanditiis.</p>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfolio4.jpeg">
+                    <div class="layer">
+                        <h3>Tittle</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, blanditiis.</p>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfolio7.jpeg">
+                    <div class="layer">
+                        <h3>Tittle</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, blanditiis.</p>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfolio6.jpeg">
+                    <div class="layer">
+                        <h3>Tittle</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, blanditiis.</p>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+   </section>
+   <!-- ------------ End Portfolio----------- -->
+
+
+   <!-- -------- Contact ---------- -->
+   <section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-tit"> Contact Me </h1>
+                <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                <p class="phone">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel: 670896000" >(+237) 670-896-000</a>
+                </p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="" class="btn btn2"> Download Cv </a>
+            </div>
+
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="message"  rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit </button>
+                </form>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!-- Testimonials -->
+   <section class="testimonials">
+    <div class="container">
+        <h1 class="sub-tit"> What My Client Say </h1>
+        <div class="row test-row">
+            <div class="testimonial-col">
+                <img src="images/user1.jpg" alt="">
+                <div>
+                    <p class="testimonial-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo corporis, ipsam esse natus doloribus reiciendis eaque consequuntur? Velit, aperiam.</p>
+                    <h3 class="testimonial-name">Client Name</h3>
+                </div>
+            </div>
+
+            <div class="testimonial-col">
+                <img src="images/user2.jpg" alt="">
+                <div>
+                    <p class="testimonial-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo corporis, ipsam esse natus doloribus reiciendis eaque consequuntur? Velit, aperiam. </p>
+                    <h3 class="testimonial-name"> Client Name </h3>
+                </div>
+             </div>
+
+            <div class="testimonial-col">
+                <img src="images/user3.jpg" alt="">
+                <div>
+                    <p class="testimonial-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo corporis, ipsam esse natus doloribus reiciendis eaque consequuntur? Velit, aperiam.</p>
+                    <h3 class="testimonial-name"> Client Name </h3>
+                </div>
+            </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section1">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Portfolio</a></li>
+            </ul> 
+        </div>
+        <div class="footer-section2">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="">Blog</a></li>
+                <li><a href="testimonial.html">Reviews</a></li>
+                <li><a href="work.html">Portfolio</a></li>
+            </ul> 
+        </div>
+        <div class="footer-section3">
+            <h3> Social </h3>
+            <div class="social">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="copyright"> Copyright &copy; 2023 Damien Ngum, Website Made by <a href=""> Knero-Tech</a> </p>
+</footer>
+<script src="script.js"></script>    
+
 </body>
 </html>
